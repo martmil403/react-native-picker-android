@@ -287,7 +287,7 @@ let styles = StyleSheet.create({
   	textAlign: 'center',
     paddingTop: 0,
     height: 30,
-    fontSize: 20,
+    fontSize: 16,
     color: '#000',
     opacity: .5,
     paddingBottom: 0,
