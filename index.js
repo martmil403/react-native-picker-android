@@ -9,9 +9,9 @@ import {
   Dimensions,
   PixelRatio,
   PanResponder,
-  ViewPropTypes,
 	TouchableHighlight,
 } from 'react-native';
+import {ViewPropTypes} from 'deprecated-react-native-prop-types';
 import PropTypes from "prop-types";
 
 class PickerAndroidItem extends Component{
@@ -51,7 +51,7 @@ export default class PickerAndroid extends Component{
     this.state = this._stateFromProps(this.props);
   }
 
-  componentWillReceiveProps(nextProps){
+  UNSAFE_componentWillReceiveProps(nextProps){
     this.setState(this._stateFromProps(nextProps));
   }
 
